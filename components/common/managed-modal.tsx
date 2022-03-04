@@ -1,11 +1,5 @@
-import {
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalBody,
-  ModalCloseButton,
-} from '@chakra-ui/react';
+import { Modal, ModalOverlay, ModalContent, ModalBody, ModalCloseButton } from '@chakra-ui/react';
+import DaoLauncher from 'components/launcher/dao-launcher';
 import { useUI } from 'contexts/ui';
 
 const ManagedModal: React.FC = () => {
@@ -15,9 +9,8 @@ const ManagedModal: React.FC = () => {
     <Modal isOpen={isModalOpen} onClose={closeModal}>
       <ModalOverlay />
       <ModalContent>
-        {/* <ModalHeader>Modal Title</ModalHeader> */}
         <ModalCloseButton />
-        <ModalBody>{modalView === 'DAO_LAUNCH' && <></>}</ModalBody>
+        <ModalBody p={8}>{modalView === 'DAO_LAUNCH' && <DaoLauncher />}</ModalBody>
       </ModalContent>
     </Modal>
   );
