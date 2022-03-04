@@ -2,6 +2,7 @@ import type { AppProps } from 'next/app';
 import { CSSReset, ChakraProvider, extendTheme } from '@chakra-ui/react';
 import { colors, fonts, components } from 'theme';
 import AppContext from 'contexts';
+import ManagedModal from 'components/common/managed-modal';
 
 const theme = extendTheme({
   colors,
@@ -15,6 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <CSSReset />
       <AppContext>
         <Component {...pageProps} />
+        <ManagedModal />
       </AppContext>
     </ChakraProvider>
   );
