@@ -20,7 +20,8 @@
       "theme/*": ["theme/*"],
       "contexts/*": ["contexts/*"],
       "hooks/*": ["hooks/*"],
-      "utils/*": ["utils/*"]
+      "utils/*": ["utils/*"],
+      "artifacts/*": ["artifacts/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
