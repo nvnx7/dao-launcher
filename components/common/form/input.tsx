@@ -45,13 +45,13 @@ const FormInput: React.FC<FormInputProps> = ({
   const error = path(['errors', ...parseErrorKeys(name), 'message'], formState) as string;
 
   return (
-    <FormControl isRequired={isRequired} isInvalid={!!error} {...props}>
-      <FormLabel>{label}</FormLabel>
+    <FormControl pb={2} isRequired={isRequired} isInvalid={!!error} {...props}>
+      <FormLabel fontWeight="semibold">{label}</FormLabel>
       <Input
         type={type}
         onBlur={field.onBlur}
         placeholder={placeholder}
-        onChangeText={(val: any) => field.onChange(val)}
+        onChange={(val: any) => field.onChange(val)}
         value={field.value}
         {..._input}
       />
