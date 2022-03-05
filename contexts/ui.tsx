@@ -6,7 +6,7 @@ interface State {
   modalData: any;
 }
 
-type ModalView = 'DAO_LAUNCH' | 'DISCONNECT';
+type ModalView = 'DAO_LAUNCH' | 'DEPLOYMENT_DATA_DOWNLOADER';
 
 type Action =
   | {
