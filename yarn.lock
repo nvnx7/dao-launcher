@@ -310,6 +310,14 @@
   dependencies:
     "@chakra-ui/utils" "1.10.4"
 
+"@chakra-ui/icons@^1.1.7":
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/icons/-/icons-1.1.7.tgz#f8c0c44a969c8654b90026b7d375b550c4bfbc49"
+  integrity sha512-YIHxey/B4M2PyFASlHXtAWFyW+tsAtGAChOJ8dsM2kpu1MbVUqm/6nMI1KIFd7Te5IWuNYA75rAHBdLI0Yu61A==
+  dependencies:
+    "@chakra-ui/icon" "2.0.5"
+    "@types/react" "^17.0.15"
+
 "@chakra-ui/image@1.1.8":
   version "1.1.8"
   resolved "https://registry.yarnpkg.com/@chakra-ui/image/-/image-1.1.8.tgz#f77bb1f1333b8a6d3b056c4f076f4a55f5e44f2f"
@@ -1177,10 +1185,10 @@
     "@ethersproject/properties" "^5.5.0"
     "@ethersproject/strings" "^5.5.0"
 
-"@fontsource/epilogue@^4.5.4":
-  version "4.5.4"
-  resolved "https://registry.yarnpkg.com/@fontsource/epilogue/-/epilogue-4.5.4.tgz#eb668f4b9c32033b9abd972fbf3389b7894fd039"
-  integrity sha512-nuzAYJULhCjsgN4XJpnku04eddfYhYThR4xYTq2lIuXWr8G9FJwNj+WRvtsNPgLMkZjBJGdm2LUdP8xaOeqgkw==
+"@fontsource/saira@^4.5.3":
+  version "4.5.3"
+  resolved "https://registry.yarnpkg.com/@fontsource/saira/-/saira-4.5.3.tgz#3478a1db735f533c066d2439cdf3896a844bd8e4"
+  integrity sha512-bWp9uMVIsE0DKp5cpdJ//VJlpzf7+F2EdpeYCR7yMInpOAdxMXx0tDzXq+U59Hh2rpcDQcUUmuGNtTS0GgcPDA==
 
 "@hookform/resolvers@^2.8.8":
   version "2.8.8"
@@ -1365,7 +1373,7 @@
   dependencies:
     ts-toolbelt "^6.15.1"
 
-"@types/react@17.0.39":
+"@types/react@17.0.39", "@types/react@^17.0.15":
   version "17.0.39"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.39.tgz#d0f4cde092502a6db00a1cded6e6bf2abb7633ce"
   integrity sha512-UVavlfAxDd/AgAacMa60Azl7ygyQNRwC/DsHZmKgNvPmRR5p70AJ5Q9EAmL2NWOJmeV+vVUI4IAP7GZrN8h8Ug==

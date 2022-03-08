@@ -1,6 +1,6 @@
 const fonts: any = {
-  body: `'Epilogue', sans-serif;`,
-  heading: `'Epilogue', sans-serif`,
+  body: `'Saira', sans-serif;`,
+  heading: `'Saira', sans-serif`,
 };
 
 export default fonts;
