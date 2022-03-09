@@ -1,3 +1,5 @@
+import '@fontsource/saira';
+
 import type { AppProps } from 'next/app';
 import { CSSReset, ChakraProvider, extendTheme } from '@chakra-ui/react';
 import { colors, fonts, components } from 'theme';
