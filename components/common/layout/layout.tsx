@@ -6,7 +6,9 @@ const Layout: React.FC<StackProps> = ({ children, ...props }) => {
   return (
     <VStack w="full" align={'stretch'} {...props}>
       <Header />
-      <Box minH="80vh">{children}</Box>
+      <Box minH="81vh" flex={1}>
+        {children}
+      </Box>
       <Footer />
     </VStack>
   );

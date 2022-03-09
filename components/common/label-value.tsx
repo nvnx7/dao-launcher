@@ -1,17 +1,25 @@
-import { HStack, StackProps, Text } from '@chakra-ui/react';
+import { HStack, StackProps, Text, TextProps } from '@chakra-ui/react';
 
 interface ILabelValueProps extends StackProps {
   label: string;
   value?: string | number;
+  labelProps?: TextProps;
+  valueProps?: TextProps;
 }
 
-const LabelValuePair: React.FC<ILabelValueProps> = ({ label, value, ...props }) => {
+export const LabelValuePair: React.FC<ILabelValueProps> = ({
+  label,
+  value,
+  labelProps,
+  valueProps,
+  ...props
+}) => {
   return (
-    <HStack alignItems="flex-start" {...props}>
-      <Text fontWeight="bold" flex={0.5}>
+    <HStack alignItems="flex-start" justify="space-between" spacing={12} {...props}>
+      <Text fontWeight="bold" {...labelProps}>
         {label}:
       </Text>
-      <Text flex={1}>{value || '-'}</Text>
+      <Text {...valueProps}>{value || '-'}</Text>
     </HStack>
   );
 };

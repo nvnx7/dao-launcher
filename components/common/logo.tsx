@@ -1,14 +1,19 @@
-import { Box, BoxProps, Text } from '@chakra-ui/react';
+import { StackProps, Text, VStack } from '@chakra-ui/react';
 
-const Logo: React.FC<BoxProps> = ({ ...props }) => {
+interface LogoProps extends StackProps {
+  color: string;
+}
+
+const Logo: React.FC<StackProps> = ({ color, ...props }) => {
   return (
-    <Box {...props}>
-      <Text fontWeight="bold" fontSize="xl">
-        The DAO
-        <br />
+    <VStack spacing={-2} alignItems="flex-start" {...props}>
+      <Text fontWeight="bold" fontSize="xl" color={color}>
+        TheDAO
+      </Text>
+      <Text fontWeight="bold" fontSize="xl" color={color}>
         Launcher
       </Text>
-    </Box>
+    </VStack>
   );
 };
 
