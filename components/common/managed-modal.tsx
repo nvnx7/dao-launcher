@@ -1,13 +1,6 @@
-import {
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalBody,
-  ModalCloseButton,
-  Box,
-} from '@chakra-ui/react';
+import { Modal, ModalOverlay, ModalContent, ModalBody, ModalCloseButton } from '@chakra-ui/react';
+import AccountInfo from 'components/account/account-info';
 import DaoDataDownloader from 'components/launcher/dao-data-downloader';
-import DaoLauncher from 'components/launcher/dao-launcher';
 import { useUI } from 'contexts/ui';
 
 const ManagedModal: React.FC = () => {
@@ -18,8 +11,9 @@ const ManagedModal: React.FC = () => {
       <ModalOverlay />
       <ModalContent>
         <ModalCloseButton />
-        <ModalBody>
-          <Box p={8}>{modalView === 'DEPLOYMENT_DATA_DOWNLOADER' && <DaoDataDownloader />}</Box>
+        <ModalBody p={8}>
+          {modalView === 'DEPLOYMENT_DATA_DOWNLOADER' && <DaoDataDownloader />}
+          {modalView === 'ACCOUNT_INFO' && <AccountInfo />}
         </ModalBody>
       </ModalContent>
     </Modal>
