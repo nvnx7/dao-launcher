@@ -4,7 +4,9 @@ import { useWeb3Provider } from 'contexts/web3-provider';
 import Card from 'components/common/card';
 
 const WalletConnectedView: React.FC = ({ children }) => {
-  const { isConnected } = useWeb3Provider();
+  const {
+    account: { isConnected },
+  } = useWeb3Provider();
 
   return (
     <>
