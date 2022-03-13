@@ -6,8 +6,8 @@ import { Center } from '@chakra-ui/react';
 const Launcher: NextPage = () => {
   return (
     <Layout>
-      <Center px={16}>
-        <LauncherStepper />
+      <Center px={2} my={8}>
+        <LauncherStepper maxW="4xl" />
       </Center>
     </Layout>
   );
