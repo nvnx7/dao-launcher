@@ -16,6 +16,7 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
+      // "web": ["../web"],
       "components/*": ["components/*"],
       "theme/*": ["theme/*"],
       "contexts/*": ["contexts/*"],
