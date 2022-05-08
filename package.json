@@ -5,7 +5,12 @@
     "web:dev": "yarn workspace @dao-launcher/web dev",
     "web:build": "yarn workspace @dao-launcher/web build",
     "web:start": "yarn workspace @dao-launcher/web start",
-    "web:lint": "yarn workspace @dao-launcher/web lint"
+    "web:lint": "yarn workspace @dao-launcher/web lint",
+    "hardhat:compile": "yarn workspace @dao-launcher/hardhat compile",
+    "hardhat:test": "yarn workspace @dao-launcher/hardhat test",
+    "hardhat:deploy:dev": "yarn workspace @dao-launcher/hardhat deploy:dev",
+    "hardhat:deploy:staging": "yarn workspace @dao-launcher/hardhat deploy:staging",
+    "hardhat:deploy:prod": "yarn workspace @dao-launcher/hardhat deploy:prod"
   },
   "workspaces": [
     "packages/*"
